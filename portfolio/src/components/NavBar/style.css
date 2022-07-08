@@ -3,22 +3,19 @@ nav {
     padding: 25px;
     display: flex;
     justify-content: space-evenly;
+
 }
 
-a { 
+.nav-link {
     color: var(--opacity);
     text-decoration: none;
     font-size: 1rem;
     text-transform: uppercase;
+    color: black;
 }
 
-a:hover { 
+.nav-link:hover { 
     font-weight: 800;
     color: black;
 }
 
-.active {
-    color: black;
-}
-
-.home-link { color: black; }

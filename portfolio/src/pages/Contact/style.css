@@ -3,6 +3,7 @@
     flex-direction: column;
     text-align: left;
     height: 40%;
+    margin: 30px 0px 0px 30px;
 }
 
 .logo{
@@ -12,4 +13,13 @@
 
 .contact-column{
     display: flex;
+}
+
+.platform{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.contact{
+
 }

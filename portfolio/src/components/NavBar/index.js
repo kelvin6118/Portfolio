@@ -5,10 +5,10 @@ import './style.css';
 const NavBar = () => {
     return (
         <nav>
-            <NavLink className="home-link" to="/">Home</NavLink>
-            <NavLink className="active" to="/about">About</NavLink>
-            <NavLink className="active" to="/projects">Projects</NavLink>
-            <NavLink className="active" to="/contact">Contact</NavLink>
+            <NavLink className="nav-link" to="/">Home</NavLink>
+            <NavLink className="nav-link" to="/about">About</NavLink>
+            <NavLink className="nav-link" to="/projects">Projects</NavLink>
+            <NavLink className="nav-link" to="/contact">Contact</NavLink>
         </nav>
     );
 }
