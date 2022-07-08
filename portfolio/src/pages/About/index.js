@@ -9,9 +9,9 @@ const Content = () => {
     </>
 }
 
-const Home = () => {
+const About = () => {
     return<>
     <Background Content={Content()}/>
     </>
 }
-export default Home;
+export default About;

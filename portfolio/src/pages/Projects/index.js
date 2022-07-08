@@ -6,12 +6,13 @@ import { Background } from '../../components';
 
 const Content = () => {
     return<>
+    
     </>
 }
 
-const Home = () => {
+const Projects = () => {
     return<>
     <Background Content={Content()}/>
     </>
 }
-export default Home;
+export default Projects;

@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import { NavBar } from './components';
-import { Home } from './pages';
+import { About, Contact, Home, Projects } from './pages';
 
 function App() {
   return (
@@ -10,6 +10,9 @@ function App() {
       <main>
         <Routes>
           <Route path='/' element={<Home/>}/>
+          <Route path='/about' element={<About/>}/>
+          <Route path='/projects' element={<Projects/>}/>
+          <Route path='/contact' element={<Contact/>}/>
         </Routes>
       </main>
     </div>

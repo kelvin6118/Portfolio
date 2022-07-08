@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  background-repeat: repeat-y;
+  background-size: 100% auto;
+  height: 100%;
 }
 
 .App-logo {
