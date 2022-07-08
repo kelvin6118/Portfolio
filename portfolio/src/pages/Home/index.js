@@ -5,7 +5,17 @@ import './style.css';
 
 const Home = () => {
     return<div style={{ backgroundImage: `url(${background})` }}>
-        <h1>Kelvin Wong</h1>
+        <div id="home-container">
+            <div style={{
+                width:"50%"
+                }}>
+                <h1 style={{
+                    color: 'white'
+                }}>Kelvin Wong</h1>
+                </div>
+            <div></div>
+        </div>
+        
     </div>
 }
 export default Home;
