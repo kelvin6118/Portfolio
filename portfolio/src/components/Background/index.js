@@ -3,7 +3,7 @@ import background from "../../media/background-crop.gif"
 import './style.css';
 
 const Background = ({Content, Message}) => {
-    return<div  style={{ backgroundImage: `url(${background})` }}>
+    return<div id='background'>
         <div id="home-container">
             <div style={{
                 width:"50%",

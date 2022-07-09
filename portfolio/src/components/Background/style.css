@@ -1,7 +1,10 @@
 div{
-    background-repeat: repeat-y;
+    background-repeat: no-repeat;
     background-size: 100% auto;
     height: 100%;
+}
+#background{
+    background-image: url('../../media/background-crop.gif');
 }
 
 #myself{
@@ -28,4 +31,10 @@ div{
     color: white;
     text-align: left;
     margin: 20px 0px 0px 30px;
+}
+
+@media (max-width:1300px) {
+    #background{
+        background-image: url('../../media/background.gif');
+    }
 }
