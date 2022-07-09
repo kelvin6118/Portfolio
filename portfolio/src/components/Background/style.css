@@ -4,6 +4,15 @@ div{
     height: 100%;
 }
 
+#myself{
+    height:20%;
+}
+
+#message{
+    height: 80%;
+    border-top: 5px solid rgba(255, 255, 255, .5);
+}
+
 #home-container{
     display: flex;
 }
