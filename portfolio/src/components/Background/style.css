@@ -38,3 +38,13 @@ div{
         background-image: url('../../media/background.gif');
     }
 }
+
+@media (max-width: 1050px) {
+    #name{
+        font-size: 30px;
+    }
+
+    #title{
+        font-size: 20px;
+    }
+}
