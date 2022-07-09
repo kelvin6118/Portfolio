@@ -11,11 +11,16 @@ div{
     height:20%;
 }
 
-#message{
+#messagediv{
     text-align: left;
     height: 80%;
     border-top: 5px solid rgba(255, 255, 255, .5);
     color: white;
+}
+
+#message{
+    padding-left: 30px;
+    animation: fadeIn 3s;
 }
 
 #home-container{
@@ -49,4 +54,9 @@ div{
     #title{
         font-size: 20px;
     }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
