@@ -9,7 +9,12 @@ const Content = () => {
 }
 const Message = () => {
     return<>
-    
+    <p>
+        I am a full-stack developer who recently trained by FutureProof.
+        I am really passionate into programming. It's because I like to solve challenging problems. <br></br>
+        <br></br>
+        I want to be a full-stack software engineer because I like both frontend and backend. Frontend allow me to be more creative and backend is more about solving problems which I am also found interested.
+    </p>
     </>
 }
 

@@ -1,4 +1,5 @@
 #contact-container{
+    animation: fadeIn 3s;
     display: flex;
     flex-direction: column;
     text-align: left;

@@ -18,7 +18,7 @@ const Content = () => {
             </div>
         <div className='contact-column' id="linkedin">
             <img className='logo' src={linkedin}/>
-            <p className='platform'>Linkln :</p>
+            <p className='platform'>Linkedln :</p>
             <p className='contact'>
                 <a className='contact' href='https://www.linkedin.com/in/yan-lok-wong-184046220/'>https://www.linkedin.com/in/yan-lok-wong-184046220/</a>
                 </p>
