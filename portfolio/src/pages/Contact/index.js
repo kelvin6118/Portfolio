@@ -26,8 +26,8 @@ const Content = () => {
         <div className='contact-column' id="github">
             <img className='logo' src={github}/>
             <p className='platform'>Github :</p>
-            <p className='contact'>
-                <a href='https://github.com/kelvin6118'>https://github.com/kelvin6118</a>
+            <p className='contact' >
+                <a className='contact' href='https://github.com/kelvin6118'>https://github.com/kelvin6118</a>
                 </p>
         </div>
         <div className='contact-column' id="moblie">
@@ -41,7 +41,7 @@ const Content = () => {
 
 const Message = () => {
     return<>
-        <p>
+        <p id='contact-message'>
             Thesea are my contact details<br></br>
             Feel free to drop me a message if you are interested
         </p>

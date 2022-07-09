@@ -9,9 +9,15 @@ const Content = () => {
     </>
 }
 
+const Message = () => {
+    return<>
+    
+    </>
+}
+
 const Projects = () => {
     return<>
-    <Background Content={Content()}/>
+    <Background Content={Content()} Message={Message()}/>
     </>
 }
 export default Projects;
