@@ -39,9 +39,18 @@ const Content = () => {
     </>
 }
 
+const Message = () => {
+    return<>
+        <p>
+            Thesea are my contact details<br></br>
+            Feel free to drop me a message if you are interested
+        </p>
+    </>
+}
+
 const Contact = () => {
     return<>
-    <Background Content={Content()}/>
+    <Background Content={Content()} Message={Message()}/>
     </>
 }
 export default Contact;

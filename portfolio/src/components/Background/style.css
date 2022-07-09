@@ -12,8 +12,10 @@ div{
 }
 
 #message{
+    text-align: left;
     height: 80%;
     border-top: 5px solid rgba(255, 255, 255, .5);
+    color: white;
 }
 
 #home-container{
