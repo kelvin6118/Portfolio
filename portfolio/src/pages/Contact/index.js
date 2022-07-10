@@ -10,7 +10,7 @@ import mobile from '../../media/mobile.png';
 
 const Content = () => {
     return<>
-    <div id="contact-container">
+    <div id="contact-content">
         <div className='contact-column' id="gmail">
             <img className='logo' src={gmail}/>
             <p className='platform'>Gmail :</p>
