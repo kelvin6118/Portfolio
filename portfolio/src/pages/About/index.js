@@ -4,6 +4,15 @@ import './style.css';
 import FPlogo from "../../media/futureproof.png";
 import GPlogo from "../../media/grassroots.jpg";
 import Reactlogo from "../../media/react.png";
+import SQLlogo from "../../media/postgresql.png";
+import HTMLlogo from "../../media/html.png";
+import CSSlogo from "../../media/css.png";
+import JSlogo from "../../media/javascript.png";
+import DJlogo from "../../media/django.png";
+import EXlogo from "../../media/express.png"
+import Jestlogo from "../../media/jest.png"
+import Pythonlogo from "../../media/python.png"
+import Javalogo from "../../media/java.png"
 
 const About = () => {
     const [information, setinformation] = useState();
@@ -37,6 +46,42 @@ const About = () => {
                         <HardSkills_Card
                         logo = {Reactlogo}
                         name = "React"
+                        />
+                        <HardSkills_Card
+                        logo = {SQLlogo}
+                        name = "PostgreSQL"
+                        />
+                        <HardSkills_Card
+                        logo = {HTMLlogo}
+                        name = "html"
+                        />
+                        <HardSkills_Card
+                        logo = {CSSlogo}
+                        name = "CSS"
+                        />
+                        <HardSkills_Card
+                        logo = {JSlogo}
+                        name = "Javascript"
+                        />
+                        <HardSkills_Card
+                        logo = {DJlogo}
+                        name = "Django"
+                        />
+                        <HardSkills_Card
+                        logo = {EXlogo}
+                        name = "Express"
+                        />
+                        <HardSkills_Card
+                        logo = {Jestlogo}
+                        name = "Jest"
+                        />
+                        <HardSkills_Card
+                        logo = {Pythonlogo}
+                        name = "Python"
+                        />
+                        <HardSkills_Card
+                        logo = {Javalogo}
+                        name = "Java"
                         />
                     </div>
                 </>
