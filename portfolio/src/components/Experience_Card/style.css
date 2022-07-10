@@ -1,0 +1,22 @@
+.Ex_Card_Header{
+    padding: 0px 10px 0px 10px;
+    display: flex;
+    height: auto;
+}
+.job{
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.Ex_Card{
+    margin: 5px 0px 5px 0px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.job-logo{
+    width: 120px;
+    height: 120px;
+}
+
+
