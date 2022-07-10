@@ -5,6 +5,8 @@ div{
 }
 #background{
     background-image: url('../../media/background-crop.gif');
+    display: flex;
+    flex-direction: column;
 }
 
 #myself{
@@ -39,6 +41,10 @@ div{
     color: white;
     text-align: left;
     margin: 20px 0px 0px 30px;
+}
+
+#content{
+    overflow-y: scroll;
 }
 
 @media (max-width:1300px) {

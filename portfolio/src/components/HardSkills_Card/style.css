@@ -1,0 +1,23 @@
+.HS_Card{
+    position:relative;
+    width: 100px;
+    height: 100px;
+}
+
+.HS_img{
+    width: 100px;
+    height: 100px;
+}
+
+.skills-description{
+    display: none;
+    background-color: rgb(247, 250, 253, .5);
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+.HS_img:hover + .skills-description{
+    animation: fadeIn 1s;
+    display: block;
+}
