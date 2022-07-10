@@ -36,11 +36,7 @@ const About = () => {
                     <div id='hardskills-content'>
                         <HardSkills_Card
                         logo = {Reactlogo}
-                        description = {
-                            <p>
-                                I've learn to use react to create frontend interaction.
-                            </p>
-                        }
+                        name = "React"
                         />
                     </div>
                 </>

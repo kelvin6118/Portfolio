@@ -30,4 +30,6 @@ button:focus {
 }
 
 #hardskills-content{
+  display: flex;
+  padding: 10px 10px 10px 10px;
 }
