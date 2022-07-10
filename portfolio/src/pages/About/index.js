@@ -49,9 +49,9 @@ const About = () => {
             <p>What to know more about me?</p>
             <div id="about-buttons">
                 
-                <button onClick={ehandleClick}>experience</button>
-                <button onClick={hhandleClick}>hard skills</button>
-                <button onClick={shandleClick}>soft skills</button>
+                <button onClick={ehandleClick}>Experiences</button>
+                <button onClick={hhandleClick}>Hard skills</button>
+                <button onClick={shandleClick}>Soft skills</button>
             </div>
         </>
     }
