@@ -45,8 +45,10 @@ const About = () => {
                 <br></br>
                 I want to be a full-stack software engineer because I like both frontend and backend. Frontend allow me to be more creative and backend is more about solving problems which I am also found interested.
             </p>
-            <div id="about buttons">
-                <p>What to know more about me?</p>
+            <br></br>
+            <p>What to know more about me?</p>
+            <div id="about-buttons">
+                
                 <button onClick={ehandleClick}>experience</button>
                 <button onClick={hhandleClick}>hard skills</button>
                 <button onClick={shandleClick}>soft skills</button>
