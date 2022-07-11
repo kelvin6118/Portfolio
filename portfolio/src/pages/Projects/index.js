@@ -1,6 +1,6 @@
 import React from 'react';
 import { Background, Project_Card} from '../../components';
-
+import "./style.css"
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import squiz from "../../media/projects/squiz_project.PNG"

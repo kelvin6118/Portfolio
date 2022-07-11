@@ -1,3 +1,7 @@
 .project_description{
     font-size: 10px;
 }
+
+#project-container{
+    height: auto;
+}
