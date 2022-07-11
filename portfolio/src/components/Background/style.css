@@ -47,7 +47,7 @@ div{
     overflow-y: scroll;
 }
 
-@media (max-width:1300px) {
+@media (max-width:1550px) {
     #background{
         background-image: url('../../media/background.gif');
     }

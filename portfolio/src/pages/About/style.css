@@ -31,10 +31,19 @@ button:focus {
 
 #hardskills-content{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  flex-direction: column;
   align-items: flex-start;
   padding: 10px 10px 10px 10px;
+}
+
+.skills-div{
+  display: flex;
+  height: auto;
+}
+
+.skills-type{
+  color: #242424;
+  padding: 0px 0px 0px 10px;
 }
 
 @media (max-width: 1050px){

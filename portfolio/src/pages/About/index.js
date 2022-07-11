@@ -15,6 +15,7 @@ import Pythonlogo from "../../media/hardskills/python.png"
 import Javalogo from "../../media/hardskills/java.png"
 import Dockerlogo from "../../media/hardskills/docker.png"
 import Mongologo from "../../media/hardskills/mongodb.png"
+import Reduxlogo from "../../media/hardskills/redux.png"
 
 const About = () => {
     const [information, setinformation] = useState();
@@ -45,54 +46,76 @@ const About = () => {
             case 'h':
                 return<>
                     <div id='hardskills-content'>
-                        <HardSkill_Card
-                        logo = {Reactlogo}
-                        name = "React"
-                        />
-                        <HardSkill_Card
-                        logo = {SQLlogo}
-                        name = "PostgreSQL"
-                        />
-                        <HardSkill_Card
-                        logo = {HTMLlogo}
-                        name = "html"
-                        />
-                        <HardSkill_Card
-                        logo = {CSSlogo}
-                        name = "CSS"
-                        />
-                        <HardSkill_Card
-                        logo = {JSlogo}
-                        name = "Javascript"
-                        />
-                        <HardSkill_Card
-                        logo = {DJlogo}
-                        name = "Django"
-                        />
-                        <HardSkill_Card
-                        logo = {EXlogo}
-                        name = "Express"
-                        />
-                        <HardSkill_Card
-                        logo = {Jestlogo}
-                        name = "Jest"
-                        />
-                        <HardSkill_Card
-                        logo = {Pythonlogo}
-                        name = "Python"
-                        />
-                        <HardSkill_Card
-                        logo = {Javalogo}
-                        name = "Java"
-                        />
-                        <HardSkill_Card
-                        logo = {Dockerlogo}
-                        name = "Docker"
-                        />
-                        <HardSkill_Card
-                        logo = {Mongologo}
-                        name = "MongoDB"
-                        />
+                        <h3 className='skills-type'>Frontend Skills</h3>
+                        <div className='skills-div' id='frontend-skills'>
+                            <HardSkill_Card
+                            logo = {Reactlogo}
+                            name = "React"
+                            />
+                            <HardSkill_Card
+                            logo = {Reduxlogo}
+                            name = "Redux"
+                            />
+                            <HardSkill_Card
+                            logo = {HTMLlogo}
+                            name = "html"
+                            />
+                            <HardSkill_Card
+                            logo = {CSSlogo}
+                            name = "CSS"
+                            />
+                        </div>
+                        <h3 className='skills-type'>Backend Skills</h3>
+                        <div className='skills-div' id='backend-skills'>
+                            
+                            <HardSkill_Card
+                            logo = {DJlogo}
+                            name = "Django"
+                            />
+                            <HardSkill_Card
+                            logo = {EXlogo}
+                            name = "Express"
+                            />
+                        </div>
+                        <h3 className='skills-type'>Database</h3>
+                        <div className='skills-div' id='database'>
+                            <HardSkill_Card
+                            logo = {SQLlogo}
+                            name = "PostgreSQL"
+                            />
+                            <HardSkill_Card
+                            logo = {Mongologo}
+                            name = "MongoDB"
+                            />
+                        </div>
+                        <h3 className='skills-type'>Programming Language</h3>
+                        <div className='skills-div' id='language-skills'>
+                            
+                            <HardSkill_Card
+                            logo = {JSlogo}
+                            name = "Javascript"
+                            />
+                            <HardSkill_Card
+                            logo = {Pythonlogo}
+                            name = "Python"
+                            />
+                            <HardSkill_Card
+                            logo = {Javalogo}
+                            name = "Java"
+                            />
+                            <HardSkill_Card
+                            logo = {Dockerlogo}
+                            name = "Docker"
+                            />
+                        </div>
+                        <h3 className='skills-type'>Testing</h3>
+                        <div className='skills-div' id='testing-skills'>
+                            <HardSkill_Card
+                            logo = {Jestlogo}
+                            name = "Jest"
+                            />
+                        </div>
+
                     </div>
                 </>
             case 's':
