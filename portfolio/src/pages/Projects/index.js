@@ -7,6 +7,8 @@ import squiz from "../../media/projects/squiz_project.PNG"
 import habbitTracker from "../../media/projects/habbitTracker.PNG"
 import sqiozLogo from "../../media/projects/squizLogo.png"
 import habbitTrackerLogo from "../../media/projects/habitrackLogo.png"
+import fpSecrets from "../../media/projects/fpSecrets.PNG"
+import fpSecretsLogo from "../../media/projects/fpSecretsLogo.png"
 
 const Content = () => {
     const responsive = {
@@ -47,6 +49,16 @@ const Content = () => {
                 github="https://github.com/kelvin6118/D-WAG-Project"
                 link="https://whimsical-sundae-fe27ab.netlify.app/"
                 logo={habbitTrackerLogo}
+                />
+                <Project_Card
+                screenShot={fpSecrets}
+                description={<p>User create post anonymously, with a post title, description and a giphy choice.
+                <br></br>
+                This post is visible to all other user on the site. Other user can comment under the post and give emoji reaction to the post.
+                </p>}
+                github="https://github.com/rakib2067/rook-journal-app"
+                link="https://futureproof-secrets.netlify.app/"
+                logo={fpSecretsLogo}
                 />
             </Carousel>
             
