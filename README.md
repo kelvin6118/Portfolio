@@ -9,3 +9,4 @@ This is my personal portfolio, right now everything is hard coded.
 - editable field to change my infromation
 - login function for myself to edit my portfolio
 - mobile friendly
+- quick email message in contact page
