@@ -1,6 +1,6 @@
 import React from 'react';
 import './style.css';
-const HardSkills_Card = ({logo, name}) => {
+const HardSkill_Card = ({logo, name}) => {
     return<>
         <div className='HS_Card'>
             <tooltip className='skill-name' title={name}>
@@ -10,4 +10,4 @@ const HardSkills_Card = ({logo, name}) => {
     </>
 }
 
-export default HardSkills_Card;
+export default HardSkill_Card;

@@ -1,20 +1,20 @@
 import React, {useState} from 'react';
-import { Background, Experience_Card, HardSkills_Card } from '../../components';
+import { Background, Experience_Card, HardSkill_Card } from '../../components';
 import './style.css';
-import FPlogo from "../../media/futureproof.png";
-import GPlogo from "../../media/grassroots.jpg";
-import Reactlogo from "../../media/react.png";
-import SQLlogo from "../../media/postgresql.png";
-import HTMLlogo from "../../media/html.png";
-import CSSlogo from "../../media/css.png";
-import JSlogo from "../../media/javascript.png";
-import DJlogo from "../../media/django.png";
-import EXlogo from "../../media/express.png"
-import Jestlogo from "../../media/jest.png"
-import Pythonlogo from "../../media/python.png"
-import Javalogo from "../../media/java.png"
-import Dockerlogo from "../../media/docker.png"
-import Mongologo from "../../media/mongodb.png"
+import FPlogo from "../../media/experiences/futureproof.png";
+import GPlogo from "../../media/experiences/grassroots.jpg";
+import Reactlogo from "../../media/hardskills/react.png";
+import SQLlogo from "../../media/hardskills/postgresql.png";
+import HTMLlogo from "../../media/hardskills/html.png";
+import CSSlogo from "../../media/hardskills/css.png";
+import JSlogo from "../../media/hardskills/javascript.png";
+import DJlogo from "../../media/hardskills/django.png";
+import EXlogo from "../../media/hardskills/express.png"
+import Jestlogo from "../../media/hardskills/jest.png"
+import Pythonlogo from "../../media/hardskills/python.png"
+import Javalogo from "../../media/hardskills/java.png"
+import Dockerlogo from "../../media/hardskills/docker.png"
+import Mongologo from "../../media/hardskills/mongodb.png"
 
 const About = () => {
     const [information, setinformation] = useState();
@@ -45,51 +45,51 @@ const About = () => {
             case 'h':
                 return<>
                     <div id='hardskills-content'>
-                        <HardSkills_Card
+                        <HardSkill_Card
                         logo = {Reactlogo}
                         name = "React"
                         />
-                        <HardSkills_Card
+                        <HardSkill_Card
                         logo = {SQLlogo}
                         name = "PostgreSQL"
                         />
-                        <HardSkills_Card
+                        <HardSkill_Card
                         logo = {HTMLlogo}
                         name = "html"
                         />
-                        <HardSkills_Card
+                        <HardSkill_Card
                         logo = {CSSlogo}
                         name = "CSS"
                         />
-                        <HardSkills_Card
+                        <HardSkill_Card
                         logo = {JSlogo}
                         name = "Javascript"
                         />
-                        <HardSkills_Card
+                        <HardSkill_Card
                         logo = {DJlogo}
                         name = "Django"
                         />
-                        <HardSkills_Card
+                        <HardSkill_Card
                         logo = {EXlogo}
                         name = "Express"
                         />
-                        <HardSkills_Card
+                        <HardSkill_Card
                         logo = {Jestlogo}
                         name = "Jest"
                         />
-                        <HardSkills_Card
+                        <HardSkill_Card
                         logo = {Pythonlogo}
                         name = "Python"
                         />
-                        <HardSkills_Card
+                        <HardSkill_Card
                         logo = {Javalogo}
                         name = "Java"
                         />
-                        <HardSkills_Card
+                        <HardSkill_Card
                         logo = {Dockerlogo}
                         name = "Docker"
                         />
-                        <HardSkills_Card
+                        <HardSkill_Card
                         logo = {Mongologo}
                         name = "MongoDB"
                         />

@@ -1,10 +1,10 @@
 import React from 'react';
 import { Background } from '../../components';
 import './style.css';
-import github from '../../media/github.png';
-import linkedin from '../../media/linkedin.png';
-import gmail from '../../media/gmail.png';
-import mobile from '../../media/mobile.png';
+import github from '../../media/contact/github.png';
+import linkedin from '../../media/contact/linkedin.png';
+import gmail from '../../media/contact/gmail.png';
+import mobile from '../../media/contact/mobile.png';
 
 
 
