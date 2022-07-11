@@ -36,3 +36,9 @@ button:focus {
   align-items: flex-start;
   padding: 10px 10px 10px 10px;
 }
+
+@media (max-width: 1050px){
+  .job-description{
+    font-size: 13px;
+  }
+}

@@ -13,6 +13,8 @@ import EXlogo from "../../media/express.png"
 import Jestlogo from "../../media/jest.png"
 import Pythonlogo from "../../media/python.png"
 import Javalogo from "../../media/java.png"
+import Dockerlogo from "../../media/docker.png"
+import Mongologo from "../../media/mongodb.png"
 
 const About = () => {
     const [information, setinformation] = useState();
@@ -82,6 +84,14 @@ const About = () => {
                         <HardSkills_Card
                         logo = {Javalogo}
                         name = "Java"
+                        />
+                        <HardSkills_Card
+                        logo = {Dockerlogo}
+                        name = "Docker"
+                        />
+                        <HardSkills_Card
+                        logo = {Mongologo}
+                        name = "MongoDB"
                         />
                     </div>
                 </>

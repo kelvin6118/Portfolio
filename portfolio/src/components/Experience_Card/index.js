@@ -7,8 +7,8 @@ const Experience_Card = ({logo, title, time, description}) => {
             <div className='Ex_Card_Header'>
                 <img className='job-logo' src={logo}></img>
                 <div className="job">
-                    <h2>{title}</h2>
-                    <p>{time}</p>
+                    <h2 className='job-title'>{title}</h2>
+                    <p className='job-period'>{time}</p>
                     </div>
             </div>
             {description}
