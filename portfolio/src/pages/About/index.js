@@ -121,7 +121,7 @@ const About = () => {
             case 's':
                 return<>
                     <div id='softskills-content'>
-                    <p>my soft skills are </p>
+                    <p>my soft skills are ...</p>
                 </div>
                  </>
         }

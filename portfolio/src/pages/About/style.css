@@ -39,11 +39,13 @@ button:focus {
 .skills-div{
   display: flex;
   height: auto;
+  flex-wrap: wrap;
 }
 
 .skills-type{
   color: #242424;
   padding: 0px 0px 0px 10px;
+  text-align: left;
 }
 
 @media (max-width: 1050px){
