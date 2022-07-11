@@ -44,7 +44,7 @@ const Content = () => {
                 <Project_Card
                 appName="Habbit Tracker"
                 screenShot={habbitTracker}
-                description={<p>User can register and login to a personal dashboard. In the dashboard, user can define what habit to track with a given time and period. Once the user have completed a habit they can record on the dashboard and it will marked on the calendar.<br></br>
+                description={<p className='project_description'>User can register and login to a personal dashboard. In the dashboard, user can define what habit to track with a given time and period. Once the user have completed a habit they can record on the dashboard and it will marked on the calendar.<br></br>
                 <br></br>
                 *note that the deployed link is not functional since we haven't successfully deploy the backend service. Therefore if you want to experience the full functional app please clone the git repo and follow the instruction.
                 </p>}
@@ -55,7 +55,7 @@ const Content = () => {
                 <Project_Card
                 appName="Futureproof Secrets"
                 screenShot={fpSecrets}
-                description={<p>User create post anonymously, with a post title, description and a giphy choice.
+                description={<p className='project_description'>User create post anonymously, with a post title, description and a giphy choice.
                 <br></br>
                 This post is visible to all other user on the site. Other user can comment under the post and give emoji reaction to the post.
                 </p>}

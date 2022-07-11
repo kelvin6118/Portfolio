@@ -1,7 +1,9 @@
-.project_description{
-    font-size: 10px;
-}
-
 #project-container{
     height: auto;
+}
+
+@media (max-width: 1050px){
+    .project_description{
+        font-size: 13px;
+    }
 }
