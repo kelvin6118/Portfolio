@@ -34,6 +34,7 @@ const Content = () => {
         <div id='project-container'>
             <Carousel responsive={responsive} itemClass="carousel-item">
                 <Project_Card
+                appName="Squiz"
                 screenShot={squiz}
                 description={<p className='project_description'>Online quiz game where users can start a quiz and compete with other players to see who knows the most trivia<br></br>The host creates the game, choosing player number, question category, question number, and difficulty level</p>}
                 github="https://github.com/kelvin6118/squiz"
@@ -41,6 +42,7 @@ const Content = () => {
                 logo={sqiozLogo}
                 />
                 <Project_Card
+                appName="Habbit Tracker"
                 screenShot={habbitTracker}
                 description={<p>User can register and login to a personal dashboard. In the dashboard, user can define what habit to track with a given time and period. Once the user have completed a habit they can record on the dashboard and it will marked on the calendar.<br></br>
                 <br></br>
@@ -51,6 +53,7 @@ const Content = () => {
                 logo={habbitTrackerLogo}
                 />
                 <Project_Card
+                appName="Futureproof Secrets"
                 screenShot={fpSecrets}
                 description={<p>User create post anonymously, with a post title, description and a giphy choice.
                 <br></br>
