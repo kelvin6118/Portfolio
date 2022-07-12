@@ -28,6 +28,7 @@ div{
     font-family: 'Titillium Web', sans-serif;
     padding-left: 30px;
     padding-right: 370px;
+    padding-bottom: 80px;
     animation: fadeIn 3s;
 }
 
