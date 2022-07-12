@@ -2,34 +2,49 @@
     padding: 0px 10px 0px 10px;
     display: flex;
     height: auto;
+    font-family: 'Titillium Web', sans-serif;
 }
 .job{
-    padding-left: 10px;
+    padding-left: 15px;
     display: flex;
     flex-direction: column;
 }
 .Ex_Card{
-    animation: fadeIn 1s;
-    margin: 5px 0px 5px 0px;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    height: auto;
+  animation: fadeIn 1s;
+  margin: 5px 0px 5px 0px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  height: auto;
 }
 .job-logo{
     width: 120px;
     height: 120px;
 }
-
+.company{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.job-title{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.job-period{
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
 @media (max-width: 1050px){
   .job-logo{
     width: 100px;
     height: 100px;
   }
   .job-title{
-    font-size: 20px;
+    font-size: 17px;
   }
   .job-period{
-    font-size: 15px;
+    font-size: 13px;
+  }
+  .company{
+    font-size: 22px;
   }
 }

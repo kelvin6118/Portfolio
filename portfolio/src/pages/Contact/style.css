@@ -1,4 +1,5 @@
 #contact-content{
+    font-family: 'Titillium Web', sans-serif;
     animation: fadeIn 3s;
     display: flex;
     flex-direction: column;

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
 #about-buttons{
     height: auto;
     display: flex;
@@ -25,8 +26,9 @@ button:focus {
 }
 
 .job-description{
-    padding: 0px 10px 10px 10px;
-    border-bottom: 5px solid #6E6D70;
+  font-family: 'Cairo', sans-serif;
+  padding: 0px 10px 10px 10px;
+  border-bottom: 5px solid #6E6D70;
 }
 
 #hardskills-content{
@@ -43,6 +45,11 @@ button:focus {
 }
 
 .skills-type{
+  height: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 25px;
+  font-family: 'Titillium Web', sans-serif;
   color: #242424;
   padding: 0px 0px 0px 10px;
   text-align: left;
@@ -51,5 +58,10 @@ button:focus {
 @media (max-width: 1050px){
   .job-description{
     font-size: 13px;
+  }
+  .skills-type{
+    font-size:20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 }

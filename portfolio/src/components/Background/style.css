@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
 div{
     background-repeat: no-repeat;
     background-size: 100% auto;
@@ -11,6 +12,7 @@ div{
 
 #myself{
     height:183px;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 #messagediv{
@@ -21,6 +23,7 @@ div{
 }
 
 #message{
+    font-family: 'Titillium Web', sans-serif;
     padding-left: 30px;
     padding-right: 370px;
     animation: fadeIn 3s;
