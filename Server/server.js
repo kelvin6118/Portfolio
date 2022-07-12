@@ -5,10 +5,11 @@ const nodemailer = require("nodemailer");
 require('dotenv').config();
 
 const app = express();
+const port = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json());
 app.use("/", router);
-app.listen(5000, () => console.log("Server Running"));
+app.listen(port, () => console.log("Server Running"));
 app.get('/', (req, res) => res.send('Hello from the Squiz Server!'))
 
 const contactEmail = nodemailer.createTransport({
