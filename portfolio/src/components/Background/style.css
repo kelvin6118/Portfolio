@@ -28,7 +28,7 @@ div{
     padding-left: 30px;
     padding-right: 370px;
     animation: fadeIn 3s;
-    overflow-y: auto;
+    overflow-y: scroll;
 }
 
 #message::-webkit-scrollbar{
