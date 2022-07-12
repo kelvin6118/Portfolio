@@ -1,5 +1,5 @@
 import React from 'react';
-import { Background } from '../../components';
+import { Background, Email_Message } from '../../components';
 import './style.css';
 import github from '../../media/contact/github.png';
 import linkedin from '../../media/contact/linkedin.png';
@@ -36,6 +36,7 @@ const Content = () => {
             <p a className='contact'>+44 7480 299268</p>
         </div>
     </div>
+    <Email_Message/>
     </>
 }
 
