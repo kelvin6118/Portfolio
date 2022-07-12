@@ -1,0 +1,33 @@
+#form-container{
+    padding: 5% 15% 5% 5%;
+    height: auto;
+    justify-content: left;
+}
+.inputDiv{
+    display: flex;
+}
+label{
+    text-align: left;
+    width: 20%;
+}
+
+#contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+textarea{
+    height: 120px;
+}
+
+.inputField{
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+#contact-submit{
+    width: 20%;
+    justify-content: right;
+    padding-left: 85%;
+    padding-top: 5%;
+}
