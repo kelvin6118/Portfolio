@@ -10,7 +10,7 @@ app.use(cors());
 app.use(express.json());
 app.use("/", router);
 app.listen(port, () => console.log("Server Running"));
-app.get('/', (req, res) => res.send('Hello from the Squiz Server!'))
+app.get('/', (req, res) => res.send('Hello from the Kelvin Server!'))
 
 const contactEmail = nodemailer.createTransport({
     service: 'gmail',
