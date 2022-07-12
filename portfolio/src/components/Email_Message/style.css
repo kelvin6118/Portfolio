@@ -1,12 +1,19 @@
 #form-container{
-    padding: 5% 15% 5% 5%;
+    font-family: 'Titillium Web', sans-serif;
+    width: 70%;
+    margin-left: 5%;
+    margin-bottom: 90px;
+    padding: 5% 5% 5% 5%;
     height: auto;
     justify-content: left;
+    border: 3px solid var(--color-shadow, currentColor);
+    box-shadow: 0.5rem 0.5rem 0 var(--color-shadow, currentColor);
 }
 .inputDiv{
     display: flex;
 }
 label{
+    position: relative;
     text-align: left;
     width: 20%;
 }
@@ -21,7 +28,10 @@ textarea{
 }
 
 .inputField{
+    display: block;
+    box-sizing: border-box;
     width: 100%;
+    border: 3px solid currentColor;
     margin-bottom: 5%;
 }
 
@@ -30,4 +40,10 @@ textarea{
     justify-content: right;
     padding-left: 85%;
     padding-top: 5%;
+}
+
+@media (max-width: 1050px){
+    label{
+        font-size: 13px;
+    }
 }
