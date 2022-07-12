@@ -11,7 +11,7 @@ const Email_Message = () => {
       emailemail: emailemail.value,
       emailmessage: emailmessage.value,
     };
-    let response = await fetch("http://localhost:5000/contact", {
+    let response = await fetch("https://kelvin-porfolio.herokuapp.com/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=utf-8",
@@ -20,8 +20,7 @@ const Email_Message = () => {
     });
     setStatus("Submit");
     let result = await response.json();
-    console.log(details);
-    console.log(result);
+    alert(result.status);
     
   };
   return (

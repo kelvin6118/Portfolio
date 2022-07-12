@@ -9,6 +9,7 @@ app.use(cors());
 app.use(express.json());
 app.use("/", router);
 app.listen(5000, () => console.log("Server Running"));
+app.get('/', (req, res) => res.send('Hello from the Squiz Server!'))
 
 const contactEmail = nodemailer.createTransport({
     service: 'gmail',
@@ -43,7 +44,7 @@ router.post("/contact", (req, res) => {
     contactEmail.sendMail(mail, (error) => {
         if (error) {
             console.log(error)
-            res.json({ status: "ERROR Cannot Sent" });
+            res.json({ status: "ERROR" });
         } else {
             res.json({ status: "Message Sent" });
         }
