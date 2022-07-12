@@ -21,7 +21,7 @@ div{
     height: 80%;
     border-top: 5px solid rgba(255, 255, 255, .5);
     color: white;
-    overflow: auto;
+    overflow: hidden;
     margin-bottom: 150px;
 }
 
@@ -90,4 +90,10 @@ div{
 @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
+}
+
+@media (max-width: 500px) {
+    #messagediv{
+        overflow-y: auto;
+    }
 }
