@@ -21,6 +21,7 @@ div{
     height: 80%;
     border-top: 5px solid rgba(255, 255, 255, .5);
     color: white;
+    overflow: auto;
 }
 
 #message{
@@ -28,10 +29,9 @@ div{
     padding-left: 30px;
     padding-right: 370px;
     animation: fadeIn 3s;
-    overflow-y: scroll;
 }
 
-#message::-webkit-scrollbar{
+#messagediv::-webkit-scrollbar{
     width: 12px;
 	background-color: #616161;
 }
