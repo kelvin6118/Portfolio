@@ -28,6 +28,12 @@ div{
     padding-left: 30px;
     padding-right: 370px;
     animation: fadeIn 3s;
+    overflow-y: hidden;
+}
+
+#message::-webkit-scrollbar{
+    width: 12px;
+	background-color: #616161;
 }
 
 #home-container{
