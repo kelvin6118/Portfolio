@@ -11,8 +11,9 @@ div{
 }
 
 #myself{
-    height:183px;
+    height:auto;
     font-family: 'Titillium Web', sans-serif;
+    padding-bottom: 5%;
 }
 
 #messagediv{
