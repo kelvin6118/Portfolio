@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
-import { Background, Experience_Card, HardSkill_Card } from '../../components';
+import { Background, Experience_Card, HardSkill_Card} from '../../components';
+import SoftSkill from '../../components/SoftSkill/index';
 import './style.css';
 import FPlogo from "../../media/experiences/futureproof.png";
 import GPlogo from "../../media/experiences/grassroots.jpg";
@@ -16,6 +17,9 @@ import Javalogo from "../../media/hardskills/java.png"
 import Dockerlogo from "../../media/hardskills/docker.png"
 import Mongologo from "../../media/hardskills/mongodb.png"
 import Reduxlogo from "../../media/hardskills/redux.png"
+import Bootstraplogo from "../../media/hardskills/bootstrap.png"
+import Netlifylogo from "../../media/hardskills/netlify.png"
+import Herokulogo from "../../media/hardskills/heroku.png"
 
 const About = () => {
     const [information, setinformation] = useState();
@@ -66,6 +70,10 @@ const About = () => {
                             logo = {CSSlogo}
                             name = "CSS"
                             />
+                            <HardSkill_Card
+                            logo = {Bootstraplogo}
+                            name = "Bootstrap"
+                            />
                         </div>
                         <h3 className='skills-type'>Backend Skills</h3>
                         <div className='skills-div' id='backend-skills'>
@@ -92,7 +100,6 @@ const About = () => {
                         </div>
                         <h3 className='skills-type'>Programming Language</h3>
                         <div className='skills-div' id='language-skills'>
-                            
                             <HardSkill_Card
                             logo = {JSlogo}
                             name = "Javascript"
@@ -117,14 +124,24 @@ const About = () => {
                             name = "Jest"
                             />
                         </div>
-
+                        <h3 className='skills-type'>Deployment</h3>
+                        <div className='skills-div' id='testing-skills'>
+                            <HardSkill_Card
+                            logo = {Netlifylogo}
+                            name = "Netlify"
+                            />
+                            <HardSkill_Card
+                            logo = {Herokulogo}
+                            name = "Heroku"
+                            />
+                        </div>
                     </div>
                 </>
             case 's':
                 return<>
                     <div id='softskills-content'>
-                    <p>my soft skills are ...</p>
-                </div>
+                        <SoftSkill/>
+                    </div>
                  </>
         }
     }

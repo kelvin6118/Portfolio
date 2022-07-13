@@ -8,6 +8,8 @@
     justify-content: left;
     border: 3px solid var(--color-shadow, currentColor);
     box-shadow: 0.5rem 0.5rem 0 var(--color-shadow, currentColor);
+    background-color: rgb(155, 155, 155, .5);
+    animation: fadeIn 2s;
 }
 .inputDiv{
     display: flex;

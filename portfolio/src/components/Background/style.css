@@ -30,7 +30,7 @@ div{
     padding-left: 30px;
     padding-right: 370px;
     padding-bottom: 80px;
-    animation: fadeIn 3s;
+    animation: fadeIn 2s;
 }
 
 #messagediv::-webkit-scrollbar{
@@ -56,7 +56,7 @@ div{
 }
 
 #content{
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 @media (max-width:1550px) {
