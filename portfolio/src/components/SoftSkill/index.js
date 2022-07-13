@@ -4,7 +4,7 @@ import "./style.css"
 const SoftSkill = ({skill,name}) => {
     return<>
         <div className='SoftSkill'>
-            <h4>{skill}{name}</h4>
+            <h4 className='SoftSkill'>{skill}{name}</h4>
         </div>
     </>
 }

@@ -137,31 +137,51 @@ const About = () => {
                     </div>
                 </>
             case 's':
+                let front = () => {
+                    return<>
+                    <SoftSkill skill="teamwork"/>
+                    <SoftSkill skill="other"/>
+                    </>
+                }
+                let back = () => {
+                    return<>
+                    <SoftSkill skill="teamwork"/>
+                    <SoftSkill skill="other"/>
+                    </>
+                }
+                let left = () => {
+                    return<>
+                    <SoftSkill skill="teamwork"/>
+                    <SoftSkill skill="other"/>
+                    </>
+                }
+                let right = () => {
+                    return<>
+                    <SoftSkill skill="teamwork"/>
+                    <SoftSkill skill="other"/>
+                    </>
+                }
+                let top = () => {
+                    return<>
+                    <SoftSkill skill="teamwork"/>
+                    <SoftSkill skill="other"/>
+                    </>
+                }
+                let bottom = () => {
+                    return<>
+                    <SoftSkill skill="teamwork"/>
+                    <SoftSkill skill="other"/>
+                    </>
+                }
                 return<>
                     <div id='softskills-content'>
                         <CubeCom 
-                            front={
-                                <SoftSkill
-                                skill = "teamwork"
-                                />
-                            }
-                            back={
-                                <SoftSkill 
-                                skill="teamwork"
-                                />
-                            }
-                            left={
-                                <SoftSkill skill="teamwork"/>
-                            }
-                            right={
-                                <SoftSkill skill="teamwork"/>
-                            }
-                            top={
-                                <SoftSkill skill="teamwork"/>
-                            }
-                            bottom={
-                                <SoftSkill skill="teamwork"/>
-                            }
+                            front={front()}
+                            back={back()}
+                            left={left()}
+                            right={right()}
+                            top={top()}
+                            bottom={bottom()}
                         />
                         
                     </div>
