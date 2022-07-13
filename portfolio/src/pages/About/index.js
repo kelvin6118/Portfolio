@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { Background, Experience_Card, HardSkill_Card, CubeCom} from '../../components';
+import { Background, Experience_Card, HardSkill_Card, CubeCom, SoftSkill} from '../../components';
 import './style.css';
 import FPlogo from "../../media/experiences/futureproof.png";
 import GPlogo from "../../media/experiences/grassroots.jpg";
@@ -139,7 +139,31 @@ const About = () => {
             case 's':
                 return<>
                     <div id='softskills-content'>
-                        <CubeCom />
+                        <CubeCom 
+                            front={
+                                <SoftSkill
+                                skill = "teamwork"
+                                />
+                            }
+                            back={
+                                <SoftSkill 
+                                skill="teamwork"
+                                />
+                            }
+                            left={
+                                <SoftSkill skill="teamwork"/>
+                            }
+                            right={
+                                <SoftSkill skill="teamwork"/>
+                            }
+                            top={
+                                <SoftSkill skill="teamwork"/>
+                            }
+                            bottom={
+                                <SoftSkill skill="teamwork"/>
+                            }
+                        />
+                        
                     </div>
                  </>
         }

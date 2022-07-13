@@ -1,0 +1,12 @@
+import React from 'react';
+import "./style.css"
+
+const SoftSkill = ({skill,name}) => {
+    return<>
+        <div className='SoftSkill'>
+            <h4>{skill}{name}</h4>
+        </div>
+    </>
+}
+
+export default SoftSkill;
