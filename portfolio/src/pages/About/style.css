@@ -57,6 +57,11 @@ button:focus {
   text-align: left;
 }
 
+#softskills-content{
+  justify-content: center;
+  align-items: center;
+}
+
 @media (max-width: 1050px){
   .job-description{
     font-size: 13px;
