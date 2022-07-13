@@ -1,7 +1,6 @@
 import React from 'react';
 import { Background } from '../../components';
 
-
 const Content = () => {
     return<>
     </>

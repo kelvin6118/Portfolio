@@ -63,6 +63,10 @@ button:focus {
   align-items: center;
 }
 
+.softSkill-type{
+  width: 100%;
+}
+
 
 @media (max-width: 1050px){
   .job-description{

@@ -1,21 +1,9 @@
 
-#cube-front{
+#cube-front, #cube-right, #cube-back, #cube-left, #cube-top, #cube-bottom{
+    font-family: 'Titillium Web', sans-serif;
     display: flex;
+    flex-wrap: wrap;
+    color: white;
     justify-content: space-around;
-    background-color: red;
-}
-#cube-right{
-    background-color: orange;
-}
-#cube-back{
-    background-color: yellow;
-}
-#cube-left{
-    background-color: green;
-}
-#cube-top{
-    background-color: blue;
-}
-#cube-bottom{
-    background-color: purple;
+    background-color: rgb(44, 44, 44, .9);
 }

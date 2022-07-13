@@ -139,38 +139,58 @@ const About = () => {
             case 's':
                 let front = () => {
                     return<>
-                    <SoftSkill skill="teamwork"/>
-                    <SoftSkill skill="other"/>
+                    <h1 className='softSkill-type'>Time management</h1>
+                    <SoftSkill skill="Stress Management"/>
+                    <SoftSkill skill="Multitasking"/>
+                    <SoftSkill skill="Planning"/>
+                    <SoftSkill skill="Meeting deadlines"/>
                     </>
                 }
                 let back = () => {
                     return<>
-                    <SoftSkill skill="teamwork"/>
-                    <SoftSkill skill="other"/>
+                    <h1 className='softSkill-type'>Communication</h1>
+                    <SoftSkill skill="Active Listening"/>
+                    <SoftSkill skill="Feedback"/>
+                    <SoftSkill skill="Respect"/>
+                    <SoftSkill skill="Honesty"/>
+                    <SoftSkill skill="Presentation"/>
                     </>
                 }
                 let left = () => {
                     return<>
-                    <SoftSkill skill="teamwork"/>
-                    <SoftSkill skill="other"/>
+                    <h1 className='softSkill-type'>Problems Solving</h1>
+                    <SoftSkill skill="Analysis"/>
+                    <SoftSkill skill="Strategic thinking"/>
+                    <SoftSkill skill="Research"/>
+                    <SoftSkill skill="Observation"/>
+                    <SoftSkill skill="Decision making"/>
                     </>
                 }
                 let right = () => {
                     return<>
-                    <SoftSkill skill="teamwork"/>
-                    <SoftSkill skill="other"/>
+                    <h1 className='softSkill-type'>Project Management</h1>
+                    <SoftSkill skill="Goal setting"/>
+                    <SoftSkill skill="Prioritizing"/>
+                    <SoftSkill skill="Resource management"/>
+                    <SoftSkill skill="Agile"/>
                     </>
                 }
                 let top = () => {
                     return<>
-                    <SoftSkill skill="teamwork"/>
-                    <SoftSkill skill="other"/>
+                    <h1 className='softSkill-type'>Teamwork</h1>
+                    <SoftSkill skill="Collaboration"/>
+                    <SoftSkill skill="Coordination"/>
+                    <SoftSkill skill="Self-awareness"/>
+                    <SoftSkill skill="Responsible"/>
                     </>
                 }
                 let bottom = () => {
                     return<>
-                    <SoftSkill skill="teamwork"/>
-                    <SoftSkill skill="other"/>
+                    <h1 className='softSkill-type'>Work Ethic </h1>
+                    <SoftSkill skill="Responsibility"/>
+                    <SoftSkill skill="Discipline"/>
+                    <SoftSkill skill="Commitment"/>
+                    <SoftSkill skill="Professionalism"/>
                     </>
                 }
                 return<>
