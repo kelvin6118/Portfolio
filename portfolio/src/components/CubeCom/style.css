@@ -6,4 +6,5 @@
     color: white;
     justify-content: space-around;
     background-color: rgb(44, 44, 44, .9);
+    animation: fadeIn 1s;
 }
