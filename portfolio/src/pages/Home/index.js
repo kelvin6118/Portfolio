@@ -1,21 +1,20 @@
 import React from 'react';
+import './style.css';
 import { Background } from '../../components';
-import $ from 'jquery'
-import 'jquery.ripples'
-
-
+import WaterWaver from 'react-water-wave';
 
 const Content = () => {
-    let ripple = () => {$(document).ready(function(){
-        $("#home-content-container").ripples({
-            resolution: 400
-        })
-    })}
-
     return<>
-    <div id='home-content-container'>
-        {ripple()}
-    </div>
+    <WaterWaver
+    interactive={true}
+    resolution={500}
+    >
+    {() => (
+        <div className="home-container">
+          
+        </div>
+    )}
+    </WaterWaver>
     </>
 }
 
