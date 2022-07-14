@@ -1,8 +1,21 @@
 import React from 'react';
 import { Background } from '../../components';
+import $ from 'jquery'
+import 'jquery.ripples'
+
+
 
 const Content = () => {
+    let ripple = () => {$(document).ready(function(){
+        $("#home-content-container").ripples({
+            resolution: 400
+        })
+    })}
+
     return<>
+    <div id='home-content-container'>
+        {ripple()}
+    </div>
     </>
 }
 

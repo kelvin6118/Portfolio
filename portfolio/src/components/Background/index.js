@@ -3,7 +3,7 @@ import './style.css';
 
 const Background = ({Content, Message}) => {
     return<div id='background'>
-        <div id="home-container">
+        <div id="main-container">
             <div style={{
                 width:"50%",
                 justifyContent: 'left',
