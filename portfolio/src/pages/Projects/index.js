@@ -9,6 +9,8 @@ import sqiozLogo from "../../media/projects/squizLogo.png"
 import habbitTrackerLogo from "../../media/projects/habitrackLogo.png"
 import fpSecrets from "../../media/projects/fpSecrets.PNG"
 import fpSecretsLogo from "../../media/projects/fpSecretsLogo.png"
+import bullHorn from "../../media/projects/bullHorn.PNG"
+import bullHornLogo from "../../media/projects/bullHornLogo.png"
 
 const Content = () => {
     const responsive = {
@@ -62,6 +64,17 @@ const Content = () => {
                 github="https://github.com/rakib2067/rook-journal-app"
                 link="https://futureproof-secrets.netlify.app/"
                 logo={fpSecretsLogo}
+                />
+                <Project_Card
+                appName="BullHorn"
+                screenShot={bullHorn}
+                description={<p className='project_description'>A Twitter like app, where user are able to post audio media instead of text messages.
+                <br></br>
+                User are able to follow each others, add friends so that their most updated post will show on the home feed.
+                </p>}
+                github="https://github.com/Graingertom/LAP4Project"
+                link="https://vast-tundra-28650.herokuapp.com/"
+                logo={bullHornLogo}
                 />
             </Carousel>
             
