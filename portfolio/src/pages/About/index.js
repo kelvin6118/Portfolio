@@ -181,7 +181,7 @@ const About = () => {
                     <SoftSkill skill="Collaboration"/>
                     <SoftSkill skill="Coordination"/>
                     <SoftSkill skill="Self-awareness"/>
-                    <SoftSkill skill="Responsible"/>
+                    <SoftSkill skill="Pair-Programming"/>
                     </>
                 }
                 let bottom = () => {
