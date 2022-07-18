@@ -56,12 +56,25 @@ div{
 }
 
 #content{
+    background-image: none;
     overflow-y: auto;
+    width: 50%;
+}
+#intro{
+    background-image: none;
+    width: 50%;
 }
 
 @media (max-width:1550px) {
+    #content{
+        background-image: url('../../media/background-white.gif');
+        overflow-y: auto;
+    }
+    #intro{
+        background-image: url('../../media/background-black.gif');
+    }
     #background{
-        background-image: url('../../media/background.gif');
+        background-image: none;
     }
 }
 
@@ -95,11 +108,27 @@ div{
     100% { opacity: 1; }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
     #messagediv{
         overflow-y: auto;
     }
-    div{
-        background-repeat: repeat-y;
+    #main-container{
+        flex-direction: column;
+        overflow-y: scroll;
+    }
+    #intro{
+        width:100%;
+        height: 50%;
+    }
+    #content{
+        width:100%;
+        height: 50%;
+    }
+    #background{
+        overflow-y: scroll;
+    }
+    #message{
+        height: auto;
+        padding-bottom: 0px;
     }
 }

@@ -5,11 +5,12 @@ const Background = ({Content, Message}) => {
     return<div id='background'>
         <div id="main-container">
             <div style={{
-                width:"50%",
                 justifyContent: 'left',
                 display: 'flex',
                 flexDirection: 'column',
-                }}>
+                }}
+                id='intro'
+                >
                     <div id='myself'>
                         <h1 id="name">Kelvin Wong</h1>
                         <h2 id="title">Full-Stack Developer</h2>
@@ -21,9 +22,7 @@ const Background = ({Content, Message}) => {
                     </div>
                 </div>
 
-            <div id='content' style={{
-                width:"50%"
-                }}>
+            <div id='content'>
                     {Content}
                     </div>
 
