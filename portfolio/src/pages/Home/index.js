@@ -4,7 +4,8 @@ import { Background } from '../../components';
 import WaterWaver from 'react-water-wave';
 
 const Content = () => {
-    return<>
+    return <></>
+    /*return<>
     <WaterWaver
     interactive={true}
     resolution={500}
@@ -15,7 +16,7 @@ const Content = () => {
         </div>
     )}
     </WaterWaver>
-    </>
+    </>*/
 }
 
 const Message = () => {
