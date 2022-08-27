@@ -2,7 +2,6 @@
     font-family: 'Titillium Web', sans-serif;
     width: 70%;
     margin-left: 5%;
-    margin-bottom: 90px;
     padding: 5% 5% 5% 5%;
     height: auto;
     justify-content: left;
@@ -13,6 +12,7 @@
 }
 .inputDiv{
     display: flex;
+    box-sizing: border-box;
 }
 label{
     position: relative;
