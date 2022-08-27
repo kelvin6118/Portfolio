@@ -9,35 +9,35 @@ import mobile from '../../media/contact/mobile.png';
 
 
 const Content = () => {
-    return<>
+    return<div id='contact-container'>
     <div id="contact-content">
-        <div className='contact-column' id="gmail">
+        <div className='contact-row' id="gmail">
             <img className='contact-logo' src={gmail}/>
             <p className='platform'>Gmail :</p>
             <p a className='contact'>kelvinwong26546@gmail.com</p>
             </div>
-        <div className='contact-column' id="linkedin">
+        <div className='contact-row' id="linkedin">
             <img className='contact-logo' src={linkedin}/>
             <p className='platform'>Linkedln :</p>
             <p className='contact'>
                 <a className='contact' href='https://www.linkedin.com/in/yan-lok-wong-184046220/'>https://www.linkedin.com/in/yan-lok-wong-184046220/</a>
                 </p>
         </div>
-        <div className='contact-column' id="github">
+        <div className='contact-row' id="github">
             <img className='contact-logo' src={github}/>
             <p className='platform'>Github :</p>
             <p className='contact' >
                 <a className='contact' href='https://github.com/kelvin6118'>https://github.com/kelvin6118</a>
                 </p>
         </div>
-        <div className='contact-column' id="moblie">
+        <div className='contact-row' id="moblie">
             <img className='contact-logo' src={mobile}/>
             <p className='platform'>Moblie :</p>
             <p a className='contact'>+44 7480 299268</p>
         </div>
     </div>
     <Email_Message/>
-    </>
+    </div>
 }
 
 const Message = () => {
