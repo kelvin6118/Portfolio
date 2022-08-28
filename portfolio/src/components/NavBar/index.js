@@ -5,6 +5,7 @@ import './style.css';
 const NavBar = () => {
     const [dropdown, setDropdown] = useState(false);
     const [click, setClick] = useState(false);
+    const [active, setActive] = useState(false);
     const onMouseEnter = () => {
           setDropdown(true);
           setClick(false);
@@ -14,18 +15,26 @@ const NavBar = () => {
           setDropdown(false);
     };
 
-    const handleClick = () => setClick(!click);
+    const handleClick = () => {
+        setClick(!click);
+        setActive(true);
+    }
+
+    const handleNotActive = () =>{
+        setActive(false);
+    }
+
     return (
         <nav>
             <ul className="nav-list">
-                <li><NavLink className="nav-link" to="/">Home</NavLink></li>
-                <li><NavLink className="nav-link" to="/about">About</NavLink></li>
-                <li className="nav-link" onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>Projects
+                <li onClick={handleNotActive}><NavLink className="nav-link" to="/">Home</NavLink></li>
+                <li onClick={handleNotActive}><NavLink className="nav-link" to="/about">About</NavLink></li>
+                <li onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}><div className={active ? "nav-link active" : "nav-link"}>Projects</div>
                     {dropdown && <ul className={click ? 'dropdown-menu clicked' : 'dropdown-menu'} onClick={handleClick}>
-                        <li ><NavLink className="dropdown-link"  to="/projects">FutureProof</NavLink></li>
+                        <li ><NavLink className="dropdown-link"  to="/futureproof_projects">FutureProof</NavLink></li>
                     </ul>}
                 </li>
-                <li><NavLink className="nav-link" to="/contact">Contact</NavLink></li>
+                <li onClick={handleNotActive}><NavLink className="nav-link" to="/contact">Contact</NavLink></li>
             </ul>
         </nav>
     );

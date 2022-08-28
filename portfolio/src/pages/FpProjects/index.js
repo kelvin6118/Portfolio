@@ -58,9 +58,9 @@ const Message = () => {
     </>
 }
 
-const Projects = () => {
+const FpProjects = () => {
     return<>
     <Background Content={Content()} Message={Message()}/>
     </>
 }
-export default Projects;
+export default FpProjects;

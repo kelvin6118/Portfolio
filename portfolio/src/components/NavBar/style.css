@@ -37,6 +37,7 @@ nav {
     width: auto;
     font-size: 20px;
     text-transform: uppercase;
+    text-decoration: none;
     text-align: left;
     color: white;
     padding: 5px 0px 5px 5px;
@@ -44,6 +45,10 @@ nav {
 
 .dropdown-link.active{
     border-bottom: 3px solid white;
+}
+
+.dropdown-link:hover { 
+    font-weight: 800;
 }
 
 .nav-link {
