@@ -29,7 +29,7 @@ const NavBar = () => {
             <ul className="nav-list">
                 <li onClick={handleNotActive}><NavLink className="nav-link" to="/">Home</NavLink></li>
                 <li onClick={handleNotActive}><NavLink className="nav-link" to="/about">About</NavLink></li>
-                <li onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}><div className={active ? "nav-link active" : "nav-link"}>Projects</div>
+                <li onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}><a className={active ? "nav-link active" : "nav-link"}>Projects</a>
                     {dropdown && <ul className={click ? 'dropdown-menu clicked' : 'dropdown-menu'} onClick={handleClick}>
                         <li ><NavLink className="dropdown-link"  to="/futureproof_projects">FutureProof</NavLink></li>
                     </ul>}
