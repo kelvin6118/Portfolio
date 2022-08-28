@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import './style.css';
 
 const NavBar = () => {
+
     return (
         <nav>
             <ul className="nav-list">
