@@ -6,12 +6,12 @@ const NavBar = () => {
     const [dropdown, setDropdown] = useState(false);
     const [click, setClick] = useState(false);
     const [active, setActive] = useState(false);
-    const onMouseEnter = () => {
+    const onOpen = () => {
           setDropdown(true);
           setClick(false);
     }
     
-    const onMouseLeave = () => {
+    const onClose = () => {
           setDropdown(false);
     };
 
@@ -20,21 +20,22 @@ const NavBar = () => {
         setActive(true);
     }
 
-    const handleNotActive = () =>{
+    const handleOtherPage = () =>{
         setActive(false);
+        setDropdown(false);
     }
 
     return (
         <nav>
             <ul className="nav-list">
-                <li onClick={handleNotActive}><NavLink className="nav-link" to="/">Home</NavLink></li>
-                <li onClick={handleNotActive}><NavLink className="nav-link" to="/about">About</NavLink></li>
-                <li onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}><a className={active ? "nav-link active" : "nav-link"}>Projects</a>
+                <li onClick={handleOtherPage}><NavLink className="nav-link" to="/">Home</NavLink></li>
+                <li onClick={handleOtherPage}><NavLink className="nav-link" to="/about">About</NavLink></li>
+                <li onClick={dropdown ? onClose : onOpen}><a className={active ? "nav-link active" : "nav-link"}>Projects</a>
                     {dropdown && <ul className={click ? 'dropdown-menu clicked' : 'dropdown-menu'} onClick={handleClick}>
                         <li ><NavLink className="dropdown-link"  to="/futureproof_projects">FutureProof</NavLink></li>
                     </ul>}
                 </li>
-                <li onClick={handleNotActive}><NavLink className="nav-link" to="/contact">Contact</NavLink></li>
+                <li onClick={handleOtherPage}><NavLink className="nav-link" to="/contact">Contact</NavLink></li>
             </ul>
         </nav>
     );
