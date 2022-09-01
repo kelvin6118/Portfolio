@@ -58,15 +58,40 @@ button:focus {
 }
 
 #softskills-content{
-  padding-top: 30%;
+  padding-top: 20%;
   justify-content: center;
   align-items: center;
+  height: auto;
 }
 
 .softSkill-type{
   width: 100%;
 }
 
+#character-container{
+  border: 3px solid black;
+}
+
+#character-header{
+  height: 30%;
+  border: 3px solid red;
+  display: flex;
+  
+}
+#character-stat{
+  height: 70%;
+  border: 3px solid green;
+}
+
+#character-status{
+  display: flex;
+  flex-direction: column;
+}
+
+.character-img{
+  width: auto;
+  height: 75%;
+}
 
 @media (max-width: 1050px){
   .job-description{

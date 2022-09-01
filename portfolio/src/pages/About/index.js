@@ -17,12 +17,13 @@ import Reduxlogo from "../../media/hardskills/redux.png"
 import Bootstraplogo from "../../media/hardskills/bootstrap.png"
 import Netlifylogo from "../../media/hardskills/netlify.png"
 import Herokulogo from "../../media/hardskills/heroku.png"
+import characterImg from "../../media/blink.png"
 import { ExperienceItems } from './ExperienceItems';
 
 const About = () => {
     const [information, setinformation] = useState();
 
-    const Content = (information) => {
+    const skills = () => {
         switch(information){
             case 'e':
                 return<>
@@ -36,7 +37,7 @@ const About = () => {
                             description= {item.description}
                             />
                         })}
-                       
+                    
                         
                     </div>
                 </>
@@ -197,8 +198,34 @@ const About = () => {
                         />
                         
                     </div>
-                 </>
+                </>
         }
+    }
+
+    const Content = () => {
+        return<>
+        <div id="character-container">
+            <div id='character-header'>
+                <div className='character-img'>
+                    <img className='character-img' src={characterImg}/>
+                </div>
+                <div id='character-status'>
+                    <div id='health-bar'>
+
+                    </div>
+                    <div id='mana-bar'>
+
+                    </div>
+                </div>
+            </div>
+
+            <div id='character-stat'>
+                {skills()}
+            </div>
+
+        </div>   
+        </>
+
     }
 
     const Message = () => {
@@ -231,7 +258,7 @@ const About = () => {
 
 
     return<>
-    <Background Content={Content(information)} Message={Message()}/>
+    <Background Content={Content()} Message={Message()}/>
     </>
 }
 export default About;
