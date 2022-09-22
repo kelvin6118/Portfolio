@@ -33,6 +33,7 @@ const NavBar = () => {
                 <li onClick={dropdown ? onClose : onOpen}><a className={active ? "nav-link active" : "nav-link"}>Projects</a>
                     {dropdown && <ul className={click ? 'dropdown-menu clicked' : 'dropdown-menu'}>
                         <li onClick={handleClick}><NavLink className="dropdown-link"  to="/futureproof_projects">FutureProof</NavLink></li>
+                        <li onClick={handleClick}><NavLink className="dropdown-link"  to="/personal_projects">Personal Projects</NavLink></li>
                     </ul>}
                 </li>
                 <li onClick={handleOtherPage}><NavLink className="nav-link" to="/contact">Contact</NavLink></li>
