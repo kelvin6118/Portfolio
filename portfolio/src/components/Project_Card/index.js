@@ -1,6 +1,7 @@
 import React from 'react';
 import "./style.css"
 import Github from '../../media/contact/github.png';
+import Link from '../../media/contact/link.png';
 
 
 
@@ -13,7 +14,7 @@ const Project_Card = ({screenShot,description, github, link, logo, appName}) => 
                     <h2>{appName}</h2>
                     {description}
                     <a href={github}> <img className='project_link' src={Github}/></a>
-                    <a href={link}> <img className='project_link' src={logo}/></a>
+                    <a href={link}> <img className='project_link' src={Link}/></a>
                 </div>
             </div>
         </div>
