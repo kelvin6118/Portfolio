@@ -17,6 +17,8 @@ const Content = () => {
         )
     },[])
 
+    console.log(projects);
+
     const responsive = {
             superLargeDesktop: {
                 breakpoint: { max: 4000, min: 3000 },
@@ -41,11 +43,11 @@ const Content = () => {
             <Carousel responsive={responsive} itemClass="carousel-item">
                 {projects.map((item) => {
                     return <Project_Card
-                    appName={item.name}
-                    screenShot={item.screenShot}
-                    description={item.description}
-                    github={item.github}
-                    link={item.link}
+                    appName={item.fields.name}
+                    screenShot={item.fields.screenShot.fields.file.url}
+                    description={item.fields.description}
+                    github={item.fields.links.github}
+                    link={item.fields.links.link}
                     />
                     }
                 )}
