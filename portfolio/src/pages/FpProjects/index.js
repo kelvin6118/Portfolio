@@ -13,7 +13,6 @@ const Content = () => {
         getProjects("FutureProof").then(
             (response) => {
                 setProjects(response);
-                console.log(response);
             }
         )
     },[])
