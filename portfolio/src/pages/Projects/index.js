@@ -19,7 +19,7 @@ const Content = (company) => {
                 setProjects(response);
             }
         )
-    },[])
+    },[company])
 
     const responsive = {
             superLargeDesktop: {
