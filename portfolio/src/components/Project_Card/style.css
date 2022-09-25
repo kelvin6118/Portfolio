@@ -50,7 +50,9 @@
 }
 
 .techStack{
-    width: fit-content;
+    height: auto;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 100px;
 }
