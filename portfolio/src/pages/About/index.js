@@ -1,5 +1,6 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import { Background, Experience_Card, HardSkill_Card, CubeCom, SoftSkill} from '../../components';
+import useContentful from '../../useContentful';
 import './style.css';
 import Reactlogo from "../../media/hardskills/react.png";
 import SQLlogo from "../../media/hardskills/postgresql.png";
@@ -21,6 +22,8 @@ import { ExperienceItems } from './ExperienceItems';
 
 const About = () => {
     const [information, setinformation] = useState();
+    const [skills, setSkills] = useState();
+    const {getSkills} = useContentful();
 
     const Content = (information) => {
         switch(information){
