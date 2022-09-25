@@ -22,8 +22,6 @@ import { ExperienceItems } from './ExperienceItems';
 
 const About = () => {
     const [information, setinformation] = useState();
-    const [skills, setSkills] = useState();
-    const {getSkills} = useContentful();
 
     const Content = (information) => {
         switch(information){

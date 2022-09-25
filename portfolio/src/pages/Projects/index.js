@@ -5,17 +5,21 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import useContentful from '../../useContentful';
 
-const Content = () => {
+const Content = (company) => {
     const [projects, setProjects] = useState([]);
-    const {getProjects} = useContentful();
+    const {query} = useContentful();
 
     useEffect(()=>{
-        getProjects("Personal").then(
+        query("project",[
+            {key:'fields.company.sys.contentType.sys.id',value: 'company'},
+            {key: ["fields.company.fields.name"], value: company}
+
+        ]).then(
             (response) => {
                 setProjects(response);
             }
         )
-    },[])
+    },[company])
 
     const responsive = {
             superLargeDesktop: {
@@ -38,20 +42,20 @@ const Content = () => {
 
     return<>
         <div id='project-container'>
+        {
             <Carousel responsive={responsive} itemClass="carousel-item">
                 {projects.map((item) => {
-                    return <Project_Card
-                    appName={item.fields.name}
-                    screenShot={item.fields.screenShot.fields.file.url}
-                    description={item.fields.description}
-                    github={item.fields.links.github}
-                    link={item.fields.links.link}
-                    techStack = {item.fields.skill}
-                    />
-                    }
-                )}
+                        return <Project_Card
+                        appName={item.fields.name}
+                        screenShot={item.fields.screenShot.fields.file.url}
+                        description={item.fields.description}
+                        github={item.fields.links.github}
+                        link={item.fields.links.link}
+                        techStack = {item.fields.skill}
+                        />})}
             </Carousel>
             
+        }   
         </div>
     </>
 }
@@ -60,7 +64,7 @@ const Message = () => {
     return<>
     <p>
         Welcome to my project collection.<br></br>
-        I've display some of my personal project for you to take a look.
+        I've display some of my previous project for you to take a look.
         <br></br><br></br>
         Hover on the image and you will see the app description along with two icon which takes you to the project git repository and the app.
         <br></br><br></br>
@@ -69,9 +73,9 @@ const Message = () => {
     </>
 }
 
-const Personal_Projects = () => {
+const Projects = ({company}) => {
     return<>
-    <Background Content={Content()} Message={Message()}/>
+    <Background Content={Content(company)} Message={Message()}/>
     </>
 }
-export default Personal_Projects;
+export default Projects;
