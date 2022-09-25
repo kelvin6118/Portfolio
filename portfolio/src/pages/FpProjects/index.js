@@ -1,11 +1,22 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Background, Project_Card} from '../../components';
 import "./style.css"
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { ProjectItems } from './ProjectItems';
+import useContentful from '../../useContentful';
 
 const Content = () => {
+    const [projects, setProjects] = useState([]);
+    const {getProjects} = useContentful();
+
+    useEffect(()=>{
+        getProjects("FutureProof").then(
+            (response) => {
+                setProjects(response);
+            }
+        )
+    },[])
+
     const responsive = {
             superLargeDesktop: {
                 breakpoint: { max: 4000, min: 3000 },
@@ -28,14 +39,13 @@ const Content = () => {
     return<>
         <div id='project-container'>
             <Carousel responsive={responsive} itemClass="carousel-item">
-                {ProjectItems.map((item) => {
+                {projects.map((item) => {
                     return <Project_Card
-                    appName={item.appName}
+                    appName={item.name}
                     screenShot={item.screenShot}
                     description={item.description}
                     github={item.github}
                     link={item.link}
-                    logo={item.logo}
                     />
                     }
                 )}
