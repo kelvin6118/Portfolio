@@ -13,6 +13,7 @@ const Content = () => {
         getProjects("FutureProof").then(
             (response) => {
                 setProjects(response);
+                console.log(response);
             }
         )
     },[])
@@ -40,19 +41,20 @@ const Content = () => {
 
     return<>
         <div id='project-container'>
+        {
             <Carousel responsive={responsive} itemClass="carousel-item">
                 {projects.map((item) => {
-                    return <Project_Card
-                    appName={item.fields.name}
-                    screenShot={item.fields.screenShot.fields.file.url}
-                    description={item.fields.description}
-                    github={item.fields.links.github}
-                    link={item.fields.links.link}
-                    />
-                    }
-                )}
+                        return <Project_Card
+                        appName={item.fields.name}
+                        screenShot={item.fields.screenShot.fields.file.url}
+                        description={item.fields.description}
+                        github={item.fields.links.github}
+                        link={item.fields.links.link}
+                        techStack = {item.fields.skill}
+                        />})}
             </Carousel>
             
+        }   
         </div>
     </>
 }

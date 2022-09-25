@@ -2,10 +2,11 @@ import React from 'react';
 import "./style.css"
 import Github from '../../media/contact/github.png';
 import Link from '../../media/contact/link.png';
+import HardSkill_Card from '../HardSkill_Card';
 
 
 
-const Project_Card = ({screenShot,description, github, link, logo, appName}) => {
+const Project_Card = ({screenShot,description, github, link, appName, techStack}) => {
     return<>
         <div className='project_card'>
             <img className='project_img' src={screenShot}/>
@@ -18,6 +19,12 @@ const Project_Card = ({screenShot,description, github, link, logo, appName}) => 
                 </div>
             </div>
         </div>
+        <h3>Tech Stack:</h3>
+            <div className='techStack'>
+                {techStack.map((skill)=>{
+                    return<HardSkill_Card logo={skill.fields.image.fields.file.url} name={skill.fields.name}/>
+                })}
+            </div>
     </>
 }
 
