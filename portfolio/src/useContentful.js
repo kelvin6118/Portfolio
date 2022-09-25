@@ -15,7 +15,6 @@ import { createClient } from "contentful"
         try{
             const entries = await client.getEntries({
                 content_type: "skills",
-                
             })
             return entries.items;
         }catch(e){
@@ -23,24 +22,26 @@ import { createClient } from "contentful"
         }
     }
 
-    const getProjects= async (company) => {
+    const getCompanies= async () => {
         try{
             const entries = await client.getEntries({
-                content_type: "project",
-                'fields.company[match]': `${company}`
+                content_type: "company",
+                select: "fields.name"
             })
             return entries.items;
         }catch(e){
             console.log(`Error fetching skills: ${e}` )
         }
     }
+    
 
+    //query useage query("project",[{field:"company",value: "FutureProof"}])
     const query = async (collection, queries) => {
         const assumbleQuery = {
             content_type: collection
         }
         for(const param of queries){
-            assumbleQuery[`fields.${param.field}[match]`] = param.value;
+            assumbleQuery[param.key] = param.value;
         }
 
         try{
@@ -53,6 +54,6 @@ import { createClient } from "contentful"
 
     }
 
-    return {getSkills, getProjects, query};
+    return {getSkills, getCompanies, query};
 }
 export default useContentful;
