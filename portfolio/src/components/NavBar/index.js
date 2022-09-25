@@ -7,7 +7,6 @@ const NavBar = () => {
     const [dropdown, setDropdown] = useState(false);
     const [click, setClick] = useState(false);
     const [active, setActive] = useState(false);
-
     const [companies, setCompanies] = useState();
     const {getCompanies} = useContentful();
   
@@ -15,7 +14,6 @@ const NavBar = () => {
       getCompanies().then(
         (response)=>{
           setCompanies(response);
-          console.log(response);
         }
       )
     },[])

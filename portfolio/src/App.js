@@ -13,7 +13,6 @@ function App() {
     getCompanies().then(
       (response)=>{
         setCompanies(response);
-        console.log(response);
       }
     )
   },[])
