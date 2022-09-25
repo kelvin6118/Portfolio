@@ -35,6 +35,24 @@ import { createClient } from "contentful"
         }
     }
 
-    return {getSkills, getProjects};
+    const query = async (collection, queries) => {
+        const assumbleQuery = {
+            content_type: collection
+        }
+        for(const param of queries){
+            assumbleQuery[`fields.${param.field}[match]`] = param.value;
+        }
+
+        try{
+            const entries = await client.getEntries(assumbleQuery);
+            return entries.items;
+        }catch(e){
+            console.log(`Error fetching skills: ${e}` )
+        }
+
+
+    }
+
+    return {getSkills, getProjects, query};
 }
 export default useContentful;

@@ -13,7 +13,6 @@ const Content = () => {
         getProjects("Personal").then(
             (response) => {
                 setProjects(response);
-                console.log(response);
             }
         )
     },[])
