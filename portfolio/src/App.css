@@ -7,7 +7,6 @@ ul{
   padding-inline-start: 0px;
 }
 
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -71,4 +70,5 @@ a{
   overflow-y: scroll;
   justify-content: center;
   width: 100vw;
+  scroll-behavior: smooth;
 }
