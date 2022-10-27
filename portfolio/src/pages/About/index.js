@@ -20,8 +20,10 @@ import Netlifylogo from "../../media/hardskills/netlify.png"
 import Herokulogo from "../../media/hardskills/heroku.png"
 import { ExperienceItems } from './ExperienceItems';
 
-const About = () => {
+const About = (skills) => {
     const [information, setinformation] = useState();
+    
+
 
     const Content = (information) => {
         switch(information){
@@ -202,6 +204,10 @@ const About = () => {
         }
     }
 
+    const Skills = (skills) => {
+
+    }
+
     const Message = () => {
         const ehandleClick = () =>{
             setinformation('e')
@@ -212,7 +218,7 @@ const About = () => {
         const shandleClick = () =>{
             setinformation('s')
         }
-        return<>
+        return<div className='message' id='about-message'>
             <p>
                 I am a full-stack developer who recently trained by FutureProof.
                 I am really passionate into programming. It's because I like to solve challenging problems. <br></br>
@@ -222,17 +228,17 @@ const About = () => {
             <br></br>
             <p>What to know more about me?</p>
             <div id="about-buttons">
-                
                 <button onClick={ehandleClick}>Experiences</button>
                 <button onClick={hhandleClick}>Hard skills</button>
                 <button onClick={shandleClick}>Soft skills</button>
             </div>
-        </>
+        </div>
     }
 
 
-    return<>
-    <Background Content={Content(information)} Message={Message()}/>
-    </>
+    return<main id='about-container'>
+    {Message()}
+    {}
+    </main>
 }
 export default About;
