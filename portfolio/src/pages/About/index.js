@@ -20,117 +20,57 @@ import Netlifylogo from "../../media/hardskills/netlify.png"
 import Herokulogo from "../../media/hardskills/heroku.png"
 import { ExperienceItems } from './ExperienceItems';
 
-const About = (skills) => {
-    const [information, setinformation] = useState();
-    
+const Message = () => {
+    return<div className='message' id='about-message'>
+        <p>
+            I am a full-stack developer who recently trained by FutureProof.
+            I am really passionate into programming. It's because I like to solve challenging problems. <br></br>
+            <br></br>
+            I want to be a full-stack software engineer because I like both frontend and backend. Frontend allow me to be more creative and backend is more about solving problems which I am also found interested.
+        </p>
+        <br></br>
+        <p>What to know more about me?</p>
+        <div id="about-buttons">
+            <a href='#skills-section' id='about-button'>Experiences</a>
+            <a href='#skills-section' id='about-button'>Hard skills</a>
+            <a href='#skills-section' id='about-button'>Soft skills</a>
+        </div>
+    </div>
+}
 
+const Skills = (skills) => {
+    return <section id='skills-section'>
+        {
+            skills.skills.map(item => {
+                let image = item.fields.image.fields.file.url;
+                let name = item.fields.name;
+                return <HardSkill_Card logo={image} name={name}/>
+            })
+        }
+    </section>
+}
+
+const Experience = () => {
+    return <section id='experience-section'>
+            {ExperienceItems.map((item) => {
+                return <Experience_Card
+                logo = {item.logo}
+                company = {item.company}
+                title = {item.title}
+                time = {item.time}
+                description= {item.description}
+                />
+            })}
+        </section>
+
+}
+
+
+
+const About = (skills) => {
 
     const Content = (information) => {
         switch(information){
-            case 'e':
-                return<>
-                    <div id='experience-content'>
-                        {ExperienceItems.map((item) => {
-                            return <Experience_Card
-                            logo = {item.logo}
-                            company = {item.company}
-                            title = {item.title}
-                            time = {item.time}
-                            description= {item.description}
-                            />
-                        })}
-                       
-                        
-                    </div>
-                </>
-            case 'h':
-                return<>
-                    <div id='hardskills-content'>
-                        <h3 className='skills-type'>Frontend Skills</h3>
-                        <div className='skills-div' id='frontend-skills'>
-                            <HardSkill_Card
-                            logo = {Reactlogo}
-                            name = "React"
-                            />
-                            <HardSkill_Card
-                            logo = {Reduxlogo}
-                            name = "Redux"
-                            />
-                            <HardSkill_Card
-                            logo = {HTMLlogo}
-                            name = "html"
-                            />
-                            <HardSkill_Card
-                            logo = {CSSlogo}
-                            name = "CSS"
-                            />
-                            <HardSkill_Card
-                            logo = {Bootstraplogo}
-                            name = "Bootstrap"
-                            />
-                        </div>
-                        <h3 className='skills-type'>Backend Skills</h3>
-                        <div className='skills-div' id='backend-skills'>
-                            
-                            <HardSkill_Card
-                            logo = {DJlogo}
-                            name = "Django"
-                            />
-                            <HardSkill_Card
-                            logo = {EXlogo}
-                            name = "Express"
-                            />
-                        </div>
-                        <h3 className='skills-type'>Database</h3>
-                        <div className='skills-div' id='database'>
-                            <HardSkill_Card
-                            logo = {SQLlogo}
-                            name = "PostgreSQL"
-                            />
-                            <HardSkill_Card
-                            logo = {Mongologo}
-                            name = "MongoDB"
-                            />
-                        </div>
-                        <h3 className='skills-type'>Programming Language</h3>
-                        <div className='skills-div' id='language-skills'>
-                            <HardSkill_Card
-                            logo = {JSlogo}
-                            name = "Javascript"
-                            />
-                            <HardSkill_Card
-                            logo = {Pythonlogo}
-                            name = "Python"
-                            />
-                            <HardSkill_Card
-                            logo = {Javalogo}
-                            name = "Java"
-                            />
-                            <HardSkill_Card
-                            logo = {Dockerlogo}
-                            name = "Docker"
-                            />
-                        </div>
-                        <h3 className='skills-type'>Testing</h3>
-                        <div className='skills-div' id='testing-skills'>
-                            <HardSkill_Card
-                            logo = {Jestlogo}
-                            name = "Jest"
-                            />
-                        </div>
-                        <h3 className='skills-type'>Deployment</h3>
-                        <div className='skills-div' id='testing-skills'>
-                            <HardSkill_Card
-                            logo = {Netlifylogo}
-                            name = "Netlify"
-                            />
-                            <HardSkill_Card
-                            logo = {Herokulogo}
-                            name = "Heroku"
-                            />
-                        </div>
-                    </div>
-                </>
             case 's':
                 let front = () => {
                     return<>
@@ -204,41 +144,11 @@ const About = (skills) => {
         }
     }
 
-    const Skills = (skills) => {
-
-    }
-
-    const Message = () => {
-        const ehandleClick = () =>{
-            setinformation('e')
-        }
-        const hhandleClick = () =>{
-            setinformation('h')
-        }
-        const shandleClick = () =>{
-            setinformation('s')
-        }
-        return<div className='message' id='about-message'>
-            <p>
-                I am a full-stack developer who recently trained by FutureProof.
-                I am really passionate into programming. It's because I like to solve challenging problems. <br></br>
-                <br></br>
-                I want to be a full-stack software engineer because I like both frontend and backend. Frontend allow me to be more creative and backend is more about solving problems which I am also found interested.
-            </p>
-            <br></br>
-            <p>What to know more about me?</p>
-            <div id="about-buttons">
-                <button onClick={ehandleClick}>Experiences</button>
-                <button onClick={hhandleClick}>Hard skills</button>
-                <button onClick={shandleClick}>Soft skills</button>
-            </div>
-        </div>
-    }
-
 
     return<main id='about-container'>
     {Message()}
-    {}
+    {Skills(skills)}
+    {Experience()}
     </main>
 }
 export default About;

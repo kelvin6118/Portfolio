@@ -28,10 +28,10 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <main>
+      <main id='main-container'>
         <Routes>
           <Route path='/' element={<Home/>}/>
-          <Route path='/about' element={<About/>}/>
+          <Route path='/about' element={<About skills={skills}/>}/>
           {companies? companies.map((company)=>{
             const path = company.fields.name.toLowerCase();
             return <Route path={`/project/${path}`} element={<Projects company={company.fields.name}/>}/>
