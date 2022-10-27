@@ -7,12 +7,20 @@ import useContentful from './useContentful';
 
 function App() {
   const [companies, setCompanies] = useState();
+  const [skills, setSkills] = useState()
   const {getCompanies} = useContentful();
+  const {getSkills} = useContentful();
 
   useEffect(()=>{
     getCompanies().then(
-      (response)=>{
-        setCompanies(response);
+      (res)=>{
+        setCompanies(res);
+      }
+    )
+
+    getSkills().then(
+      (res) => {
+        setSkills(res);
       }
     )
   },[])
