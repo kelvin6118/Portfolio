@@ -11,6 +11,7 @@ nav {
 
 .nav-list{
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     width: 100%;
     padding: 0px 0px 0px 0px;
@@ -21,6 +22,7 @@ nav {
     background: rgb(32, 32, 32, .8);
     width: 150px;
     position: absolute;
+    left: 100%;
     list-style: none;
     text-align: start;
     z-index: 999;
@@ -56,6 +58,10 @@ nav {
     font-weight: 800;
     color: rgb(0, 0, 0);
     background: rgba(228, 228, 228, 0.8);
+}
+
+.nav-dropdown{
+    position: relative;
 }
 
 .nav-link {

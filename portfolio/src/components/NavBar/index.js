@@ -42,7 +42,8 @@ const NavBar = () => {
             <ul className="nav-list">
                 <li onClick={handleOtherPage}><NavLink className="nav-link" to="/">Home</NavLink></li>
                 <li onClick={handleOtherPage}><NavLink className="nav-link" to="/about">About</NavLink></li>
-                <li onClick={dropdown ? onClose : onOpen}><a className={active ? "nav-link active" : "nav-link"}>Projects</a>
+                <li onClick={dropdown ? onClose : onOpen} className="nav-dropdown">
+                    <a className={active ? "nav-link active" : "nav-link"}>Projects</a>
                     {dropdown && <ul className={click ? 'dropdown-menu clicked' : 'dropdown-menu'}>
                         {companies.map((company)=>{
                             const path = company.fields.name.toLowerCase();
