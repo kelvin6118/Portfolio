@@ -11,15 +11,6 @@ const Background = ({Content, Message}) => {
                 }}
                 id='intro'
                 >
-                    <div id='myself'>
-                        <h1 id="name">Kelvin Wong</h1>
-                        <h2 id="title">Full-Stack Developer</h2>
-                    </div>
-                    <div id='messagediv'>
-                        <div id='message'>
-                            {Message}
-                        </div>
-                    </div>
                 </div>
 
             <div id='content'>
