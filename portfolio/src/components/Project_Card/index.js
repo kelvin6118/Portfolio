@@ -13,7 +13,7 @@ const Project_Card = ({screenShot,description, github, link, appName, techStack}
             <div className='overlay'>
                 <div className="project_content">
                     <h2>{appName}</h2>
-                    {description}
+                    <article>{description}</article>
                     <a href={github}> <img className='project_link' src={Github}/></a>
                     <a href={link}> <img className='project_link' src={Link}/></a>
                 </div>
