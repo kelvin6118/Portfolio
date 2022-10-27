@@ -12,7 +12,9 @@ const Experience_Card = ({logo, title, time, description, company}) => {
                     <p className='job-period'>{time}</p>
                     </div>
             </div>
-            {description}
+            <p className='job-description'>
+                {description}
+            </p>
         </div>
     </>
 }

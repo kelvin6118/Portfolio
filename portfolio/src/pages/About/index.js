@@ -21,7 +21,7 @@ import Herokulogo from "../../media/hardskills/heroku.png"
 import { ExperienceItems } from './ExperienceItems';
 
 const Message = () => {
-    return<div className='message' id='about-message'>
+    return<section className='message' id='about-message'>
         <p>
             I am a full-stack developer who recently trained by FutureProof.
             I am really passionate into programming. It's because I like to solve challenging problems. <br></br>
@@ -31,11 +31,11 @@ const Message = () => {
         <br></br>
         <p>What to know more about me?</p>
         <div id="about-buttons">
-            <a href='#skills-section' id='about-button'>Experiences</a>
+            <a href='#experiences-section' id='about-button'>Experiences</a>
             <a href='#skills-section' id='about-button'>Hard skills</a>
             <a href='#skills-section' id='about-button'>Soft skills</a>
         </div>
-    </div>
+    </section>
 }
 
 const Skills = (skills) => {
@@ -51,7 +51,7 @@ const Skills = (skills) => {
 }
 
 const Experience = () => {
-    return <section id='experience-section'>
+    return <section id='experiences-section'>
             {ExperienceItems.map((item) => {
                 return <Experience_Card
                 logo = {item.logo}
@@ -62,7 +62,6 @@ const Experience = () => {
                 />
             })}
         </section>
-
 }
 
 
@@ -147,8 +146,8 @@ const About = (skills) => {
 
     return<main id='about-container'>
     {Message()}
-    {Skills(skills)}
     {Experience()}
+    {Skills(skills)}
     </main>
 }
 export default About;
