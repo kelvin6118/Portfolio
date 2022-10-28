@@ -1,23 +1,7 @@
-import React, {useEffect, useState} from 'react';
-import { Background, Experience_Card, HardSkill_Card, CubeCom, SoftSkill} from '../../components';
+import React from 'react';
+import { Experience_Card, HardSkill_Card, CubeCom, SoftSkill} from '../../components';
 import useContentful from '../../useContentful';
 import './style.css';
-import Reactlogo from "../../media/hardskills/react.png";
-import SQLlogo from "../../media/hardskills/postgresql.png";
-import HTMLlogo from "../../media/hardskills/html.png";
-import CSSlogo from "../../media/hardskills/css.png";
-import JSlogo from "../../media/hardskills/javascript.png";
-import DJlogo from "../../media/hardskills/django.png";
-import EXlogo from "../../media/hardskills/express.png"
-import Jestlogo from "../../media/hardskills/jest.png"
-import Pythonlogo from "../../media/hardskills/python.png"
-import Javalogo from "../../media/hardskills/java.png"
-import Dockerlogo from "../../media/hardskills/docker.png"
-import Mongologo from "../../media/hardskills/mongodb.png"
-import Reduxlogo from "../../media/hardskills/redux.png"
-import Bootstraplogo from "../../media/hardskills/bootstrap.png"
-import Netlifylogo from "../../media/hardskills/netlify.png"
-import Herokulogo from "../../media/hardskills/heroku.png"
 import { ExperienceItems } from './ExperienceItems';
 
 const Message = () => {
