@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import { Experience_Card, HardSkill_Card, CubeCom, SoftSkill} from '../../components';
 import useContentful from '../../useContentful';
 import './style.css';
@@ -23,9 +23,11 @@ const Message = () => {
 }
 
 const Skills = (skills) => {
+
+
     return <section id='skills-section'>
         {
-            skills.skills.map(item => {
+            skills.map(item => {
                 let image = item.fields.image.fields.file.url;
                 let name = item.fields.name;
                 return <HardSkill_Card logo={image} name={name}/>
@@ -50,7 +52,19 @@ const Experience = () => {
 
 
 
-const About = (skills) => {
+const About = () => {
+    const {getSkills} = useContentful();
+    const [skills, setSkills] = useState();
+    const [loading, setLoading] = useState(true);
+
+    useEffect(()=>{
+        getSkills().then(
+          (res) => {
+            setSkills(res);
+          }
+        ).finally(()=>setLoading(false));
+
+      },[])
 
     const Content = (information) => {
         switch(information){
@@ -131,7 +145,7 @@ const About = (skills) => {
     return<main id='about-container'>
     {Message()}
     {Experience()}
-    {Skills(skills)}
+    {loading? <p>Loading Skills</p> :Skills(skills)}
     </main>
 }
 export default About;

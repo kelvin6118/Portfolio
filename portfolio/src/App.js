@@ -7,9 +7,7 @@ import useContentful from './useContentful';
 
 function App() {
   const [companies, setCompanies] = useState();
-  const [skills, setSkills] = useState()
   const {getCompanies} = useContentful();
-  const {getSkills} = useContentful();
 
   useEffect(()=>{
     getCompanies().then(
@@ -18,11 +16,6 @@ function App() {
       }
     )
 
-    getSkills().then(
-      (res) => {
-        setSkills(res);
-      }
-    )
   },[])
 
   return (
@@ -31,7 +24,7 @@ function App() {
       <main id='main-container'>
         <Routes>
           <Route path='/' element={<Home/>}/>
-          <Route path='/about' element={<About skills={skills}/>}/>
+          <Route path='/about' element={<About/>}/>
           {companies? companies.map((company)=>{
             const path = company.fields.name.toLowerCase();
             return <Route path={`/project/${path}`} element={<Projects company={company.fields.name}/>}/>
