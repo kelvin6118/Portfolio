@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Background, Project_Card} from '../../components';
+import {Project_Card} from '../../components';
 import "./style.css"
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -41,7 +41,7 @@ const Content = (company) => {
         };
 
     return<>
-        <div id='project-container'>
+        <section id='projects-section'>
         {
             <Carousel responsive={responsive} itemClass="carousel-item">
                 {projects.map((item) => {
@@ -56,26 +56,27 @@ const Content = (company) => {
             </Carousel>
             
         }   
-        </div>
+        </section>
     </>
 }
 
 const Message = () => {
-    return<>
-    <p>
-        Welcome to my project collection.<br></br>
-        I've display some of my previous project for you to take a look.
-        <br></br><br></br>
-        Hover on the image and you will see the app description along with two icon which takes you to the project git repository and the app.
-        <br></br><br></br>
-        Have fun!
-    </p>
-    </>
+    return<section>
+        <p>
+            Welcome to my project collection.<br></br>
+            I've display some of my previous project for you to take a look.
+            <br></br><br></br>
+            Hover on the image and you will see the app description along with two icon which takes you to the project git repository and the app.
+            <br></br><br></br>
+            Have fun!
+        </p>
+    </section>
 }
 
 const Projects = ({company}) => {
-    return<>
-    <Background Content={Content(company)} Message={Message()}/>
-    </>
+    return<main id='projects-container'>
+        {Message()}
+        {Content(company)}
+    </main>
 }
 export default Projects;
