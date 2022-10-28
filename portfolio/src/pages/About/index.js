@@ -23,8 +23,6 @@ const Message = () => {
 }
 
 const Skills = (skills) => {
-
-
     return <section id='skills-section'>
         {
             skills.map(item => {

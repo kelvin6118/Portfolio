@@ -61,7 +61,7 @@ const Content = (company) => {
 }
 
 const Message = () => {
-    return<section>
+    return<section id='project-intro'>
         <p>
             Welcome to my project collection.<br></br>
             I've display some of my previous project for you to take a look.
